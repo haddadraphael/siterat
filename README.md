@@ -15,8 +15,18 @@ index.html
 customers.html
 pricing.html
 contact.html
+mentions-legales.html
+confidentialite.html
 styles.css
 script.js
+robots.txt
+sitemap.xml
 assets/
 CNAME
 ```
+
+## Notes
+
+- Le site est en francais par defaut, avec un switch anglais.
+- Le formulaire utilise FormSubmit vers contact@siterat.fr.
+- La promesse 48h correspond a une premiere version apres reception des contenus necessaires.
