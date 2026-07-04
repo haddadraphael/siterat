@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Siterat | Sites professionnels pour commerces locaux</title>
+    <meta
+      name="description"
+      content="Des sites rapides, propres et abordables pour restaurants, boutiques, cabinets et entreprises locales."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Siterat accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </span>
+        <span>Siterat</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#home">Home</a>
+        <a href="#customers">Our Customers</a>
+        <a href="#contact">Contact</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+
+      <a class="header-cta" href="#contact">Get a Quote now</a>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-inner">
+          <a class="announcement" href="#contact">
+            <span>New</span>
+            Get your website now
+          </a>
+          <h1>Your business, online in 48 hours.</h1>
+          <p>
+            We build fast, professional websites for local businesses: restaurants, shops,
+            clinics and service companies. Fixed price, clear process, quick launch.
+          </p>
+          <a class="primary-button" href="#contact">
+            Get a Quote
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="logo-strip" id="customers" aria-label="Clients">
+        <div class="logo-track">
+          <span>Maison Lora</span>
+          <span>North Clinic</span>
+          <span>Cafe Verde</span>
+          <span>Studio Alba</span>
+          <span>Urban Dental</span>
+          <span>Fresh Market</span>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="section-heading">
+          <h2>Loved by users & businesses</h2>
+        </div>
+        <article class="testimonial">
+          <p>
+            "The process was incredibly simple. We shared a few details about our
+            business, and within days we had a beautiful, mobile-friendly website
+            that customers could use immediately."
+          </p>
+          <div class="person">
+            <div class="avatar">IR</div>
+            <div>
+              <strong>Independent Restaurant Owner</strong>
+              <span>Local food business</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="pricing-section" id="pricing">
+        <div class="section-heading">
+          <h2>Pricing plans</h2>
+          <p>
+            Choose a plan that fits the size of your business. Start simple and
+            upgrade when you need more pages, features or support.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <p class="audience">For individuals & new creators</p>
+            <span class="from">From</span>
+            <h3>299€</h3>
+            <p class="payment">One-Time Payment</p>
+            <a class="plan-button" href="#contact">Get Started</a>
+            <p class="features-title">Included features:</p>
+            <ul>
+              <li>1-3 page website</li>
+              <li>Mobile-friendly design</li>
+              <li>Contact form</li>
+              <li>Google Maps integration</li>
+              <li>Launch handoff</li>
+            </ul>
+          </article>
+
+          <article class="price-card featured">
+            <p class="audience">For growing businesses</p>
+            <span class="from">From</span>
+            <h3>499€</h3>
+            <p class="payment">One-Time Payment</p>
+            <a class="plan-button" href="#contact">Get Started</a>
+            <p class="features-title">Included features:</p>
+            <ul>
+              <li>Up to 5 pages</li>
+              <li>Custom design & branding</li>
+              <li>Photo gallery or blog</li>
+              <li>Contact form + Google Maps</li>
+              <li>Basic on-page SEO</li>
+              <li>Launch handoff</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <p class="audience">Special service for running business</p>
+            <span class="from">From</span>
+            <h3>999€</h3>
+            <p class="payment">One-Time Payment</p>
+            <a class="plan-button" href="#contact">Get Started</a>
+            <p class="features-title">Included features:</p>
+            <ul>
+              <li>10+ pages</li>
+              <li>Full custom design & branding</li>
+              <li>E-commerce or booking system</li>
+              <li>Advanced integrations</li>
+              <li>SEO & performance setup</li>
+              <li>Priority support</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-section" id="contact">
+        <div>
+          <h2>Ready to launch your site?</h2>
+          <p>Send a few details and get a clear fixed-price proposal.</p>
+        </div>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Project
+            <textarea name="message" rows="4" placeholder="Tell us what you need"></textarea>
+          </label>
+          <button type="submit">Request a quote</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </span>
+        <span>Siterat</span>
+      </a>
+      <p>Professional websites for local businesses.</p>
+      <div class="footer-links">
+        <a href="#customers">Customers</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
