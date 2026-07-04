@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Siterat</title>
+    <meta name="description" content="Contact Siterat for a local business website quote." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="contact">
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Siterat home"><img src="assets/Siterat_logo_white_background.png" alt="Siterat" /></a>
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button><span></span><span></span><span></span></button>
+      <nav class="nav-links" aria-label="Main navigation" data-nav>
+        <a href="index.html">Home</a><a href="customers.html">Our Customers</a><a href="contact.html" aria-current="page">Contact</a><a href="pricing.html">Pricing</a>
+      </nav>
+      <a class="button button-dark header-cta" href="contact.html"><span>Get a Quote now</span><span aria-hidden="true">Get a Quote now</span></a>
+    </header>
+
+    <main>
+      <section class="contact-hero section-pad">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h1>Get in touch with us</h1>
+          <p>
+            Have questions, need help, or want to get in touch with someone from
+            Siterat? We are here to support you every step of the way.
+          </p>
+          <div class="support-card">
+            <span>Support</span>
+            <a href="mailto:contact@siterat.fr">contact@siterat.fr</a>
+            <p>Questions, feedback, or support? Our team is just a message away.</p>
+          </div>
+        </div>
+
+        <form class="contact-form reveal">
+          <label>Name*<input type="text" name="name" placeholder="Your name" required /></label>
+          <label>Email*<input type="email" name="email" placeholder="you@example.com" required /></label>
+          <label>Company*<input type="text" name="company" placeholder="Your company" required /></label>
+          <label>Phone*<input type="tel" name="phone" placeholder="+33 ..." required /></label>
+          <label class="full-field">Message*<textarea name="message" rows="6" placeholder="Tell us about your project" required></textarea></label>
+          <button class="button button-violet form-button" type="submit"><span>Send message</span><span aria-hidden="true">Send message</span></button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><a class="footer-brand" href="index.html"><img src="assets/Siterat_logo_lightblack_background.png" alt="Siterat" /></a><p>Professional websites for local businesses.</p></div>
+      <div class="footer-social"><span>Follow us on:</span><a href="https://www.instagram.com/">IG</a><a href="https://www.linkedin.com/">IN</a></div>
+      <nav class="footer-links" aria-label="Footer navigation"><strong>Quick Links</strong><a href="index.html">Home</a><a href="pricing.html">Pricing</a><a href="customers.html">Our Customers</a><a href="contact.html">Contact us</a></nav>
+      <div class="footer-bottom"><span>Designed by Raph, Powered by Siterat</span></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

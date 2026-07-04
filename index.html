@@ -1,194 +1,275 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Siterat | Sites professionnels pour commerces locaux</title>
+    <title>Siterat | Professional websites for local businesses</title>
     <meta
       name="description"
-      content="Des sites rapides, propres et abordables pour restaurants, boutiques, cabinets et entreprises locales."
+      content="Fast, polished websites for local businesses. Launch-ready design, clear pricing, and a clean process."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Siterat accueil">
-        <span class="brand-mark" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-        </span>
-        <span>Siterat</span>
-      </a>
+  <body data-page="home">
+    <div class="site-shell">
+      <header class="site-header" data-header>
+        <a class="brand" href="index.html" aria-label="Siterat home">
+          <img src="assets/Siterat_logo_white_background.png" alt="Siterat" />
+        </a>
 
-      <button class="menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button>
+          <span></span><span></span><span></span>
+        </button>
 
-      <nav class="nav-links" aria-label="Navigation principale">
-        <a href="#home">Home</a>
-        <a href="#customers">Our Customers</a>
-        <a href="#contact">Contact</a>
-        <a href="#pricing">Pricing</a>
-      </nav>
+        <nav class="nav-links" aria-label="Main navigation" data-nav>
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="customers.html">Our Customers</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </nav>
 
-      <a class="header-cta" href="#contact">Get a Quote now</a>
-    </header>
+        <a class="button button-dark header-cta" href="contact.html">
+          <span>Get a Quote now</span>
+          <span aria-hidden="true">Get a Quote now</span>
+        </a>
+      </header>
 
-    <main id="home">
-      <section class="hero">
-        <div class="hero-inner">
-          <a class="announcement" href="#contact">
-            <span>New</span>
-            Get your website now
-          </a>
-          <h1>Your business, online in 48 hours.</h1>
-          <p>
-            We build fast, professional websites for local businesses: restaurants, shops,
-            clinics and service companies. Fixed price, clear process, quick launch.
-          </p>
-          <a class="primary-button" href="#contact">
-            Get a Quote
-            <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </section>
+      <main>
+        <section class="hero hero-home">
+          <div class="ambient ambient-one"></div>
+          <div class="ambient ambient-two"></div>
+          <div class="hero-inner reveal">
+            <a class="announcement" href="contact.html">
+              <strong>New</strong>
+              <span>Get your website now</span>
+            </a>
+            <h1>Your business, online in 48 hours.</h1>
+            <p>
+              We build fast, professional websites for local businesses - restaurants,
+              shops, clinics, studios and service teams. Fixed price, no surprises.
+            </p>
+            <a class="button button-violet hero-button" href="contact.html">
+              <span>Get a Quote</span>
+              <i aria-hidden="true">&rarr;</i>
+            </a>
+          </div>
 
-      <section class="logo-strip" id="customers" aria-label="Clients">
-        <div class="logo-track">
-          <span>Maison Lora</span>
-          <span>North Clinic</span>
-          <span>Cafe Verde</span>
-          <span>Studio Alba</span>
-          <span>Urban Dental</span>
-          <span>Fresh Market</span>
-        </div>
-      </section>
-
-      <section class="testimonial-section">
-        <div class="section-heading">
-          <h2>Loved by users & businesses</h2>
-        </div>
-        <article class="testimonial">
-          <p>
-            "The process was incredibly simple. We shared a few details about our
-            business, and within days we had a beautiful, mobile-friendly website
-            that customers could use immediately."
-          </p>
-          <div class="person">
-            <div class="avatar">IR</div>
-            <div>
-              <strong>Independent Restaurant Owner</strong>
-              <span>Local food business</span>
+          <div class="hero-preview reveal" aria-label="Website launch preview">
+            <div class="preview-window">
+              <div class="window-top">
+                <span></span><span></span><span></span>
+                <p>siterat launch board</p>
+              </div>
+              <div class="preview-grid">
+                <div class="preview-panel wide">
+                  <small>Current launch</small>
+                  <strong>Restaurant website</strong>
+                  <div class="progress"><span></span></div>
+                </div>
+                <div class="preview-panel">
+                  <small>Pages</small>
+                  <strong>05</strong>
+                </div>
+                <div class="preview-panel dark">
+                  <small>Delivery</small>
+                  <strong>48h</strong>
+                </div>
+                <div class="preview-panel graph">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
             </div>
           </div>
-        </article>
-      </section>
+        </section>
 
-      <section class="pricing-section" id="pricing">
-        <div class="section-heading">
-          <h2>Pricing plans</h2>
-          <p>
-            Choose a plan that fits the size of your business. Start simple and
-            upgrade when you need more pages, features or support.
-          </p>
-        </div>
+        <section class="logo-marquee" aria-label="Brands and local businesses">
+          <div class="marquee-track">
+            <span>Maison Lora</span>
+            <span>Cafe Verde</span>
+            <span>North Clinic</span>
+            <span>Urban Dental</span>
+            <span>Fresh Market</span>
+            <span>Studio Alba</span>
+            <span>Hotel Nove</span>
+            <span>Atelier Rue 8</span>
+            <span>Maison Lora</span>
+            <span>Cafe Verde</span>
+            <span>North Clinic</span>
+            <span>Urban Dental</span>
+            <span>Fresh Market</span>
+            <span>Studio Alba</span>
+            <span>Hotel Nove</span>
+            <span>Atelier Rue 8</span>
+          </div>
+        </section>
 
-        <div class="pricing-grid">
-          <article class="price-card">
-            <p class="audience">For individuals & new creators</p>
-            <span class="from">From</span>
-            <h3>299€</h3>
-            <p class="payment">One-Time Payment</p>
-            <a class="plan-button" href="#contact">Get Started</a>
-            <p class="features-title">Included features:</p>
-            <ul>
-              <li>1-3 page website</li>
-              <li>Mobile-friendly design</li>
-              <li>Contact form</li>
-              <li>Google Maps integration</li>
-              <li>Launch handoff</li>
-            </ul>
-          </article>
+        <section class="split-section section-pad">
+          <div class="section-copy reveal">
+            <p class="eyebrow">For local businesses</p>
+            <h2>Launch-ready websites without the agency fog.</h2>
+            <p>
+              Siterat turns your offer, photos and business details into a polished
+              website that feels premium on day one, on mobile and desktop.
+            </p>
+          </div>
+          <div class="feature-stack">
+            <article class="feature-card reveal">
+              <span>01</span>
+              <h3>Fast structure</h3>
+              <p>Clear pages, direct copy, and conversion-focused sections.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span>02</span>
+              <h3>Premium motion</h3>
+              <p>Subtle reveals, moving logo rails and button micro-interactions.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span>03</span>
+              <h3>Easy updates</h3>
+              <p>Clean HTML, CSS and JS so you can edit the site yourself.</p>
+            </article>
+          </div>
+        </section>
 
-          <article class="price-card featured">
-            <p class="audience">For growing businesses</p>
-            <span class="from">From</span>
-            <h3>499€</h3>
-            <p class="payment">One-Time Payment</p>
-            <a class="plan-button" href="#contact">Get Started</a>
-            <p class="features-title">Included features:</p>
-            <ul>
-              <li>Up to 5 pages</li>
-              <li>Custom design & branding</li>
-              <li>Photo gallery or blog</li>
-              <li>Contact form + Google Maps</li>
-              <li>Basic on-page SEO</li>
-              <li>Launch handoff</li>
-            </ul>
-          </article>
+        <section class="testimonial-band section-pad">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Loved by users &amp; businesses</p>
+            <h2>What owners say after launch.</h2>
+          </div>
+          <div class="testimonial-grid">
+            <article class="quote-card reveal">
+              <p>
+                "The process was incredibly simple. We shared a few details about
+                our business, and within days we had a beautiful, mobile-friendly
+                website that our customers love."
+              </p>
+              <div class="person">
+                <span class="avatar">IR</span>
+                <div>
+                  <strong>Independent Restaurant Owner</strong>
+                  <small>Local food business</small>
+                </div>
+              </div>
+            </article>
+            <article class="quote-card compact reveal">
+              <strong data-count="48">0</strong>
+              <span>hours to first launch</span>
+            </article>
+            <article class="quote-card compact reveal">
+              <strong data-count="5">0</strong>
+              <span>pages built in the business plan</span>
+            </article>
+          </div>
+        </section>
 
-          <article class="price-card">
-            <p class="audience">Special service for running business</p>
-            <span class="from">From</span>
-            <h3>999€</h3>
-            <p class="payment">One-Time Payment</p>
-            <a class="plan-button" href="#contact">Get Started</a>
-            <p class="features-title">Included features:</p>
-            <ul>
-              <li>10+ pages</li>
-              <li>Full custom design & branding</li>
-              <li>E-commerce or booking system</li>
-              <li>Advanced integrations</li>
-              <li>SEO & performance setup</li>
-              <li>Priority support</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+        <section class="pricing-section section-pad">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Pricing plans</p>
+            <h2>Start for 299&euro; and upgrade anytime.</h2>
+            <p>Choose the right level for your business size, launch needs and support.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card reveal">
+              <div class="price-head">
+                <div>
+                  <h3>Starter</h3>
+                  <p>For individuals &amp; new creators</p>
+                </div>
+                <div class="price"><span>From</span><strong>299&euro;</strong></div>
+              </div>
+              <p class="payment">One-Time Payment</p>
+              <a class="button button-dark full" href="contact.html"><span>Get Started</span></a>
+              <ul>
+                <li>1-3 page website</li>
+                <li>Mobile-friendly design</li>
+                <li>Contact form</li>
+                <li>Google Maps integration</li>
+                <li>Launch handoff</li>
+              </ul>
+            </article>
+            <article class="price-card featured reveal">
+              <div class="price-head">
+                <div>
+                  <h3>Business</h3>
+                  <p>For growing businesses</p>
+                </div>
+                <div class="price"><span>From</span><strong>499&euro;</strong></div>
+              </div>
+              <p class="payment">One-Time Payment</p>
+              <a class="button button-violet full" href="contact.html"><span>Get Started</span></a>
+              <ul>
+                <li>Up to 5 pages</li>
+                <li>Custom design &amp; branding</li>
+                <li>Photo gallery or blog</li>
+                <li>Contact form + Google Maps</li>
+                <li>Basic on-page SEO</li>
+                <li>Launch handoff</li>
+              </ul>
+            </article>
+            <article class="price-card reveal">
+              <div class="price-head">
+                <div>
+                  <h3>Premium</h3>
+                  <p>Special service for running business</p>
+                </div>
+                <div class="price"><span>From</span><strong>999&euro;</strong></div>
+              </div>
+              <p class="payment">One-Time Payment</p>
+              <a class="button button-dark full" href="contact.html"><span>Get Started</span></a>
+              <ul>
+                <li>10+ pages</li>
+                <li>Full custom design &amp; branding</li>
+                <li>E-commerce or booking system</li>
+                <li>Advanced integrations</li>
+                <li>SEO &amp; performance setup</li>
+                <li>Priority support</li>
+              </ul>
+            </article>
+          </div>
+        </section>
 
-      <section class="cta-section" id="contact">
+        <section class="bottom-cta">
+          <div class="bottom-cta-inner reveal">
+            <p class="eyebrow">Customized for you</p>
+            <h2>Your homepage should feel like part of the customer journey.</h2>
+            <a class="button button-light" href="contact.html">
+              <span>Get Started</span>
+              <i aria-hidden="true">&rarr;</i>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
         <div>
-          <h2>Ready to launch your site?</h2>
-          <p>Send a few details and get a clear fixed-price proposal.</p>
+          <a class="footer-brand" href="index.html">
+            <img src="assets/Siterat_logo_lightblack_background.png" alt="Siterat" />
+          </a>
+          <p>Professional websites for local businesses.</p>
         </div>
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" />
-          </label>
-          <label>
-            Project
-            <textarea name="message" rows="4" placeholder="Tell us what you need"></textarea>
-          </label>
-          <button type="submit">Request a quote</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <a class="brand" href="#home">
-        <span class="brand-mark" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-        </span>
-        <span>Siterat</span>
-      </a>
-      <p>Professional websites for local businesses.</p>
-      <div class="footer-links">
-        <a href="#customers">Customers</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </footer>
-
+        <div class="footer-social">
+          <span>Follow us on:</span>
+          <a href="https://www.instagram.com/" aria-label="Instagram">IG</a>
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn">IN</a>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <strong>Quick Links</strong>
+          <a href="index.html">Home</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="customers.html">Our Customers</a>
+          <a href="contact.html">Contact us</a>
+        </nav>
+        <div class="footer-bottom">
+          <span>Designed by Raph, Powered by Siterat</span>
+        </div>
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
