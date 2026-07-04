@@ -1,17 +1,22 @@
 # Siterat
 
-Site vitrine de Siterat, publié avec GitHub Pages sur :
+Site vitrine statique de Siterat, publie avec GitHub Pages sur :
 
 https://siterat.fr
 
 ## Description
 
-Siterat propose la création rapide de sites web professionnels pour les commerces locaux, indépendants, restaurants, boutiques, cabinets et petites entreprises.
+Siterat propose la creation rapide de sites web professionnels pour les commerces locaux, independants, restaurants, boutiques, cabinets et petites entreprises.
 
 ## Structure du projet
 
 ```text
 index.html
+customers.html
+pricing.html
+contact.html
 styles.css
 script.js
+assets/
 CNAME
+```
