@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#08080b"/>
+  <circle cx="925" cy="125" r="210" fill="#6847ff" opacity=".42"/>
+  <circle cx="190" cy="500" r="180" fill="#ffe13f" opacity=".34"/>
+  <text x="80" y="150" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="62" font-weight="900">Siterat</text>
+  <text x="80" y="285" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="76" font-weight="900">Votre business,</text>
+  <text x="80" y="370" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="76" font-weight="900">en ligne en 48h.</text>
+  <text x="80" y="460" fill="#cfc8ff" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="700">Sites web professionnels pour commerces locaux.</text>
+  <rect x="80" y="500" width="280" height="62" rx="31" fill="#6847ff"/>
+  <text x="220" y="540" text-anchor="middle" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="800">Demander mon site</text>
+</svg>
