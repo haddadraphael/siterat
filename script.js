@@ -17,12 +17,12 @@ nav?.querySelectorAll("a").forEach((link) => {
 const pageMeta = {
   home: {
     fr: {
-      title: "Siterat | Sites web professionnels en 48h",
-      description: "Siterat cr&eacute;e des sites web professionnels pour restaurants, boutiques, cabinets et ind&eacute;pendants.",
+      title: "Siterat | Sites web pour commerces, restos et ind&eacute;pendants",
+      description: "Siterat refait votre vitrine web en site clair, rapide et pr&ecirc;t &agrave; envoyer &agrave; vos clients.",
     },
     en: {
-      title: "Siterat | Professional websites in 48h",
-      description: "Siterat builds professional websites for restaurants, shops, clinics and local businesses.",
+      title: "Siterat | Websites for shops, restaurants and local services",
+      description: "Siterat turns your current web presence into a clear website people can actually use.",
     },
   },
   customers: {
@@ -102,7 +102,7 @@ const setLanguage = (lang) => {
 
   const page = document.body.dataset.page || "home";
   const meta = pageMeta[page]?.[lang] || pageMeta.home[lang];
-  document.title = meta.title;
+  document.title = decodeHtml(meta.title);
   document.querySelector("meta[name='description']")?.setAttribute("content", decodeHtml(meta.description));
 };
 
@@ -129,12 +129,71 @@ if ("IntersectionObserver" in window) {
 
 document.querySelectorAll("[data-comparison]").forEach((card) => {
   const range = card.querySelector("[data-comparison-range]");
-  const update = () => card.style.setProperty("--split", `${range.value}%`);
-  range?.addEventListener("input", update);
-  range?.addEventListener("change", update);
-  update();
+  if (!range) return;
+
+  let split = Number(range.value);
+  let direction = 1;
+  let isUserInteracting = false;
+  let resumeTimer;
+  const min = Number(range.min) || 8;
+  const max = Number(range.max) || 92;
+  const autoMin = Math.max(min, 26);
+  const autoMax = Math.min(max, 74);
+
+  const setSplit = (value) => {
+    split = Math.min(max, Math.max(min, value));
+    range.value = String(Math.round(split));
+    card.style.setProperty("--split", `${split}%`);
+  };
+
+  const pauseForUser = () => {
+    isUserInteracting = true;
+    window.clearTimeout(resumeTimer);
+  };
+
+  const resumeSoon = () => {
+    window.clearTimeout(resumeTimer);
+    resumeTimer = window.setTimeout(() => {
+      isUserInteracting = false;
+      direction = split >= 50 ? -1 : 1;
+    }, 1800);
+  };
+
+  const updateFromRange = () => {
+    pauseForUser();
+    setSplit(Number(range.value));
+    resumeSoon();
+  };
+
+  range.addEventListener("input", updateFromRange);
+  range.addEventListener("change", () => {
+    setSplit(Number(range.value));
+    resumeSoon();
+  });
+  card.addEventListener("pointerenter", pauseForUser);
+  card.addEventListener("pointerleave", resumeSoon);
+  card.addEventListener("pointerdown", pauseForUser);
+  card.addEventListener("pointerup", resumeSoon);
+  card.addEventListener("touchstart", pauseForUser, { passive: true });
+  card.addEventListener("touchend", resumeSoon);
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!prefersReducedMotion && card.hasAttribute("data-comparison-auto")) {
+    const animate = () => {
+      if (!isUserInteracting) {
+        if (split <= autoMin) direction = 1;
+        if (split >= autoMax) direction = -1;
+        setSplit(split + direction * 0.12);
+      }
+      window.requestAnimationFrame(animate);
+    };
+    window.requestAnimationFrame(animate);
+  } else {
+    setSplit(split);
+  }
 });
 
 if (new URLSearchParams(location.search).get("sent") === "true") {
   document.querySelector("[data-success-banner]")?.classList.add("is-visible");
 }
+
